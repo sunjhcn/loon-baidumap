@@ -1,8 +1,20 @@
 #!name=GoogleRewrite
-#!desc=谷歌搜索重定向至google.com
+#!desc=谷歌搜索重定向，将google.cn,google.h等重定向至google.com
 
 [URL Rewrite]
-^https?:\/\/www\.?(g|google)\.cn https://www.google.com 302
+#hostname=*.google.com.hk ,*.g.cn,*.google.cn ,*.google.co.jp
+
+#^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+#^https:\/\/www\.google\.co\.jp https://www.google.com 302
+#^https:\/\/www\.google\.com\.hk https://www.google.com 302
+
+#6月版
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+^https:\/\/www\.google\.co\.jp https://www.google.com 302
+# 非强制跳转
+# ^https:\/\/www\.google\.com\.hk\/.+ https://www.google.com/ 302
+# 强制跳转
+^https:\/\/www\.google\.com\.hk\/ https://www.google.com/ 302
 
 [MITM]
-hostname = *.google.cn
+hostname = *.google.com.hk ,*.g.cn,*.google.cn ,*.google.co.jp
