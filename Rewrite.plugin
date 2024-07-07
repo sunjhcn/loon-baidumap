@@ -1,5 +1,7 @@
 #!name=GoogleRewrite
 #!desc=谷歌搜索重定向，将google.cn,google.h等重定向至google.com
+
+
 [URL Rewrite]
 ^https?:\/\/www\.google\.cn https://www.google.com 302
 ^https?:\/\/www\.google\.com\.hk\/ https://www.google.com 302
