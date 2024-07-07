@@ -1,5 +1,5 @@
 #!name=GoogleRewrite
-#!desc=谷歌搜索重定向，将google.cn,google.h等重定向至google.com
+#!desc=谷歌搜索重定向至google.com
 
 
 [URL Rewrite]
