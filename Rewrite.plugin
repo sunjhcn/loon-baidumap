@@ -1,7 +1,6 @@
 #!name=GoogleRewrite
 #!desc=谷歌搜索重定向至google.com
 
-
 [URL Rewrite]
 ^https?:\/\/www\.g|google\.cn https://www.google.com 302
 
